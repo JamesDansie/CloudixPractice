@@ -2,6 +2,8 @@ package cloudix;
 
 public class Prime {
     // test if a number is prime
+    // from https://www.geeksforgeeks.org/java-program-to-check-if-a-number-is-prime-or-not/
+    // with slight modification
     public static boolean bruteForce(int input){
         //edge case
         if(input <= 1) return false;
