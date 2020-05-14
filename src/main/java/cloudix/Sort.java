@@ -5,6 +5,8 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+// from; https://www.geeksforgeeks.org/merge-sort/
+// with minor changes
 public class Sort {
     // refresh on sorts
     // start with merge sort
@@ -73,7 +75,7 @@ public class Sort {
         sort.sort(input, 0, input.length - 1);
 
         // built in method
-        
+
 //        Arrays.sort(input);
 
         System.out.println(Arrays.toString(input));
