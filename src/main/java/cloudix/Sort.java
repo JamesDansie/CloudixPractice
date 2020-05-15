@@ -1,9 +1,6 @@
 package cloudix;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 // from; https://www.geeksforgeeks.org/merge-sort/
 // with minor changes
@@ -68,11 +65,34 @@ public class Sort {
         }
     }
 
+    public static void insertSort(int[] arr){
+        for(int i = 1; i < arr.length; i++){
+
+            int whileindex = i-1;
+            while(whileindex >= 0){
+
+
+                if(arr[whileindex] > arr[whileindex + 1]){
+                    // swap
+                    int tmp = arr[whileindex];
+                    arr[whileindex] = arr[whileindex + 1];
+                    arr[whileindex + 1] = tmp;
+
+                }
+                whileindex--;
+            }
+        }
+    }
+
     public static void main(String[] args){
         int[] input = new int[]{10, 2, 3, 6, 8, 12, -4, 123123};
 
         Sort sort = new Sort();
         sort.sort(input, 0, input.length - 1);
+
+        LinkedList<Integer> blah = new LinkedList<>();
+        blah.add(1);
+        blah.add(3);
 
         // built in method
 
